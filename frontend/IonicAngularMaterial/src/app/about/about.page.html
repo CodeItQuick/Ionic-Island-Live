@@ -1,0 +1,54 @@
+
+  <ion-header>
+      <ion-toolbar>
+          <ion-list lines="none" id="headerMenu">
+            <ion-item>
+              <img src="../assets/image/Logo12.png"/>
+            </ion-item>
+            <ion-item [routerLink]="['/home']" >
+                <h1>Main</h1>
+            </ion-item>
+            <ion-item  [routerLink]="['/About']" >
+                <h1>About</h1>
+            </ion-item>
+            <ion-item>
+              <h1>Portfolio</h1>
+              <ion-select interface="popover" [(ngModel)]="portfolio" (ionChange)="OpenPage()">
+                <ion-select-option value="sports" >
+                  <h1>Sports</h1>
+                </ion-select-option>
+                <ion-select-option value="events">
+                  <h1>Events</h1>
+                </ion-select-option>
+                <ion-select-option value="other">
+                  <h1>Other</h1>
+                </ion-select-option>
+              </ion-select>
+            </ion-item>
+            
+            <ion-item>
+              <h1>1-902-394-4901</h1>
+            </ion-item>
+          </ion-list>
+      </ion-toolbar>
+  </ion-header>
+  <ion-content>
+
+    <ion-row class="background-tint-primary-lightest">
+      <ion-col size="1"></ion-col>
+      <ion-col size="10" class="bar background-shade-tertiary-darker">
+          <ion-title class="bar title" text-md-center><h1>Island Live: A Project By Darrell Theriault</h1></ion-title>
+      </ion-col>
+      <ion-col size="1"></ion-col>
+    </ion-row> 
+    <ion-row class="background-tint-primary-lightest">
+      <ion-col size="1"></ion-col>
+      <ion-col size="3">
+        <img src="../assets/image/Curated/300/PictureShot.jpg" />
+      </ion-col>
+      <ion-col size="5">
+        <ion-textarea>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium nisl nec est suscipit hendrerit. Pellentesque tincidunt venenatis ante, et porttitor odio aliquet iaculis. Sed tincidunt est sollicitudin sem faucibus, iaculis feugiat metus aliquet. Morbi a metus ac sapien laoreet molestie. Nullam id elit non risus placerat accumsan id sit amet lorem. Aenean aliquet, massa nec vehicula pharetra, nisl quam posuere nulla, vel luctus risus ex eu sem. Donec vehicula fringilla lectus, mattis porta tellus sagittis ut. Praesent molestie non neque at tincidunt. Maecenas et ante imperdiet, aliquet massa sed, ornare eros. Phasellus id metus blandit, feugiat eros quis, ornare sapien. Aliquam quis imperdiet magna. Curabitur elit augue, gravida a auctor vitae, ornare non nisi. Curabitur ac enim sagittis, ullamcorper metus nec, sagittis velit.</ion-textarea>
+      </ion-col>
+      <ion-col size="3"></ion-col>
+    </ion-row>
+  </ion-content>

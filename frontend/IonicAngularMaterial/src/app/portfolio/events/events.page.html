@@ -32,22 +32,19 @@
           </ion-list>
       </ion-toolbar>
   </ion-header>
-    <ion-content>
-      <ion-row  class="background-tint-primary-lightest">
-        <ion-col size="12">
-          <ion-slides pager="true" class="slides-container" [options]="slideOpt" autoplay="true" loop="true">
-            <ion-slide *ngFor="let s of sliderOne.slidesItems">
-              <img src="{{s.image}}" />
+
+<ion-content>
+  <ion-row  class="background-tint-primary-lightest">
+    <ion-col size="2"></ion-col>
+    <ion-col size="8">
+        <ion-slides pager="true" class="slides-container" [options]="slideOpt" autoplay="true" loop="true">
+            <ion-slide *ngFor="let s of sliderThree.slidesItems">
+              <img style="height: 70vh;" src="{{s.image}}" />
             </ion-slide>
           </ion-slides>
-        </ion-col>
-        
-        <ion-col size="1">
-            <span class="slider-nav arrow-prev"
-              (click)="slidePrev(sliderOne,slideWithNav)">
-              <div class="prev-icon-custom custon-nav"
-                [class.disabled]="sliderOne.isBeginningSlide"></div>
-            </span>
-          </ion-col>
-      </ion-row>
-    </ion-content>
+    </ion-col>
+    <ion-col size="2">
+    </ion-col>
+  </ion-row>
+
+</ion-content>

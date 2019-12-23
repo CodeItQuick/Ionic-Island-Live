@@ -1,19 +1,18 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { IonSlides } from '@ionic/angular';
 import { Router } from '@angular/router';
 
-
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-events',
+  templateUrl: './events.page.html',
+  styleUrls: ['./events.page.scss'],
 })
-export class HomePage {
-  slideWithNav: IonSlides;
+export class EventsPage {
   portfolio: string;
+  slideWithNav: IonSlides;
 
 
     isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
@@ -40,15 +39,15 @@ export class HomePage {
       slidesItems: [
         {
           id: 1,
-          image: '../../assets/image/Cover Photos/LiveMusic749x1920.jpg'
+          image: '../assets/image/Cover Photos/LiveMusic749x1920.jpg'
         },
         {
           id: 2,
-          image: '../../assets/image/Cover Photos/IslandersBench1920x749jpg.jpg'
+          image: '../assets/image/Cover Photos/IslandersBench1920x749jpg.jpg'
         },
         {
           id: 3,
-          image: '../../assets/image/Cover Photos/ShrekTheMusical1920x749.jpg'
+          image: '../assets/image/Cover Photos/ShrekTheMusical1920x749.jpg'
         }
       ]
     };
@@ -177,16 +176,15 @@ checkisEnd(object, slideView) {
       });
     }
 
-  OpenPage() {
-    if (this.portfolio === 'sports') {
-      this.router.navigateByUrl(`sports`);
-    } else if (this.portfolio === 'events') {
-      this.router.navigateByUrl(`events`);
-    } else if (this.portfolio === 'other') {
-    this.router.navigateByUrl(`other`);
+    OpenPage() {
+      if (this.portfolio === 'sports') {
+        this.router.navigateByUrl(`sports`);
+      } else if (this.portfolio === 'events') {
+        this.router.navigateByUrl(`events`);
+      } else if (this.portfolio === 'other') {
+      this.router.navigateByUrl(`other`);
+      }
     }
-  }
-
 constructor(private breakpointObserver: BreakpointObserver, private router: Router) {}
 
 }

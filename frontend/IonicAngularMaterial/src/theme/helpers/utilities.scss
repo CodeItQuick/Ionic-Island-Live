@@ -1,4 +1,4 @@
-
+@import "./colors.scss";
 /* Utilities
 ==================================*/
 
@@ -112,4 +112,60 @@
 }
 .clear-bg {
     background: transparent;
+}
+.background {
+    &-tint-primary-lightest {
+        background-color: $tint-color-10; 
+    }
+    &-shade-primary-dark {
+        background-color: $shades-color-1;
+        margin: 0;
+        color: white;
+    }
+    &-shade-primary-darker {
+        background-color: $shades-color-3;
+        color: white;
+    }
+    &-shade-secondary-dark {
+        background-color: $monochromatic-color-3;
+        color: white;
+        margin: 0;
+    }
+    &-shade-secondary-darker {
+        background-color: $monochromatic-color-7;
+        color: white;
+    }
+    &-shade-tertiary-darker {
+        background-color: $monochromatic-color-7;
+        color: white;
+    }
+    &-tint-secondary-lightest {
+        background-color: $tint-complementary-10;
+    }
+    &-tint-tertiary-lightest {
+        background-color: $tint-triadics-10;
+    }
+}
+
+.primary {
+    &-darker {
+        color: $tint-color-3;
+    }
+    &-darkest {
+        color: $tint-color-1;
+    }
+}
+.triadic {
+    &-darker {
+        color: $tint-triadic-3;
+    }
+    &-darkest {
+        color: $shades-triadics-5;
+    }
+}
+
+.triadics {
+    &-darker {
+        color: $tint-triadics-3;
+    }
 }

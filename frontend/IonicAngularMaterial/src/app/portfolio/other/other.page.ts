@@ -1,17 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { IonSlides } from '@ionic/angular';
 import { Router } from '@angular/router';
 
-
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-other',
+  templateUrl: './other.page.html',
+  styleUrls: ['./other.page.scss'],
 })
-export class HomePage {
+export class OtherPage {
+
   slideWithNav: IonSlides;
   portfolio: string;
 
@@ -40,15 +40,15 @@ export class HomePage {
       slidesItems: [
         {
           id: 1,
-          image: '../../assets/image/Cover Photos/LiveMusic749x1920.jpg'
+          image: '../assets/image/Cover Photos/LiveMusic749x1920.jpg'
         },
         {
           id: 2,
-          image: '../../assets/image/Cover Photos/IslandersBench1920x749jpg.jpg'
+          image: '../assets/image/Cover Photos/IslandersBench1920x749jpg.jpg'
         },
         {
           id: 3,
-          image: '../../assets/image/Cover Photos/ShrekTheMusical1920x749.jpg'
+          image: '../assets/image/Cover Photos/ShrekTheMusical1920x749.jpg'
         }
       ]
     };
@@ -187,6 +187,7 @@ checkisEnd(object, slideView) {
     }
   }
 
-constructor(private breakpointObserver: BreakpointObserver, private router: Router) {}
+  constructor(private breakpointObserver: BreakpointObserver, private router: Router) {}
+
 
 }

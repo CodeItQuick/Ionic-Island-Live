@@ -1,4 +1,4 @@
-
+@import "./../helpers/colors.scss";
 /* Directives : MD Label
 ==================================*/
 
@@ -53,7 +53,7 @@
     background: #f8f8f8;
 }
 .item-md-label .highlight-positive {
-    background: #387ef5;
+    background: $monochromatic-color-7;
 }
 .item-md-label .highlight-calm {
     background: #11c1f3;

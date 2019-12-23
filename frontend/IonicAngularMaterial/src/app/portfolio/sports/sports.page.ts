@@ -1,17 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { IonSlides } from '@ionic/angular';
 import { Router } from '@angular/router';
 
-
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-sports',
+  templateUrl: './sports.page.html',
+  styleUrls: ['./sports.page.scss'],
 })
-export class HomePage {
+export class SportsPage {
   slideWithNav: IonSlides;
   portfolio: string;
 
@@ -40,15 +39,15 @@ export class HomePage {
       slidesItems: [
         {
           id: 1,
-          image: '../../assets/image/Cover Photos/LiveMusic749x1920.jpg'
+          image: '../../../assets/image/Cover Photos/LiveMusic749x1920.jpg'
         },
         {
           id: 2,
-          image: '../../assets/image/Cover Photos/IslandersBench1920x749jpg.jpg'
+          image: '../../../assets/image/Cover Photos/IslandersBench1920x749jpg.jpg'
         },
         {
           id: 3,
-          image: '../../assets/image/Cover Photos/ShrekTheMusical1920x749.jpg'
+          image: '../../../assets/image/Cover Photos/ShrekTheMusical1920x749.jpg'
         }
       ]
     };
@@ -60,27 +59,27 @@ export class HomePage {
       slidesItems: [
         {
           id: 1,
-          image: './../assets/image/IslandSportWheelchairBasketball.jpg'
+          image: './../../../assets/image/IslandSportWheelchairBasketball.jpg'
         },
         {
           id: 2,
-          image: './../assets/image/800NationalDodgeball.jpg'
+          image: './../../../assets/image/800NationalDodgeball.jpg'
         },
         {
           id: 3,
-          image: './../assets/image/CanadianRingetteChampionships.jpg'
+          image: './../../../assets/image/CanadianRingetteChampionships.jpg'
         },
         {
           id: 4,
-          image: './../assets/image/Curated/800/HockeyOct11_1.jpg'
+          image: './../../../assets/image/Curated/800/HockeyOct11_1.jpg'
         },
         {
           id: 5,
-          image: './../assets/image/Curated/800/HockeyOct11_2.jpg'
+          image: './../../../assets/image/Curated/800/HockeyOct11_2.jpg'
         },
         {
           id: 6,
-          image: './../assets/image/Curated/800/IslandersVsHalifax.jpg'
+          image: './../../../assets/image/Curated/800/IslandersVsHalifax.jpg'
         }
       ]
     };
@@ -92,27 +91,27 @@ export class HomePage {
       slidesItems: [
         {
           id: 1,
-          image: './../assets/image/JazzFestivalSaxophone700.jpg'
+          image: './../../../assets/image/JazzFestivalSaxophone700.jpg'
         },
         {
           id: 2,
-          image: './../assets/image/IslandMicMac700.jpg'
+          image: './../../../assets/image/IslandMicMac700.jpg'
         },
         {
           id: 3,
-          image: './../assets/image/IslandLiveJazzPlayer.jpg'
+          image: './../../../assets/image/IslandLiveJazzPlayer.jpg'
         },
         {
           id: 4,
-          image: './../assets/image/Curated/800/EnnisSisters.jpg'
+          image: './../../../assets/image/Curated/800/EnnisSisters.jpg'
         },
         {
           id: 5,
-          image: './../assets/image/Curated/800/PEISO.jpg'
+          image: './../../../assets/image/Curated/800/PEISO.jpg'
         },
         {
           id: 6,
-          image: './../assets/image/Curated/800/CatherineMacLellan.jpg'
+          image: './../../../assets/image/Curated/800/CatherineMacLellan.jpg'
         }
       ]
     };
@@ -124,19 +123,19 @@ export class HomePage {
       slidesItems: [
         {
           id: 1,
-          image: './../assets/image/Curated/800/Leopard.jpg'
+          image: './../../../assets/image/Curated/800/Leopard.jpg'
         },
         {
           id: 2,
-          image: './../assets/image/Curated/800/zebra 5X7 b&W.jpg'
+          image: './../../../assets/image/Curated/800/zebra 5X7 b&W.jpg'
         },
         {
           id: 3,
-          image: './../assets/image/Curated/800/BeautyAndBeast.jpg'
+          image: './../../../assets/image/Curated/800/BeautyAndBeast.jpg'
         },
         {
           id: 4,
-          image: './../assets/image/FridayNightBluesStMarysChurch.jpg'
+          image: './../../../assets/image/FridayNightBluesStMarysChurch.jpg'
         }
       ]
     };
