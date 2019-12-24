@@ -15,4 +15,7 @@
     top: 0;
     z-index: 1;
   }
-  
+#headerMenu {
+  display: flex;
+  flex-direction: horizontal;
+}

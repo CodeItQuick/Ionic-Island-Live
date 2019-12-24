@@ -1,37 +1,4 @@
 
-  <ion-header>
-      <ion-toolbar>
-          <ion-list lines="none" id="headerMenu">
-            <ion-item>
-              <img src="../assets/image/Logo12.png"/>
-            </ion-item>
-            <ion-item [routerLink]="['/home']" >
-                <h1>Main</h1>
-            </ion-item>
-            <ion-item  [routerLink]="['/About']" >
-                <h1>About</h1>
-            </ion-item>
-            <ion-item>
-              <h1>Portfolio</h1>
-              <ion-select interface="popover" [(ngModel)]="portfolio" (ionChange)="OpenPage()">
-                <ion-select-option value="sports" >
-                  <h1>Sports</h1>
-                </ion-select-option>
-                <ion-select-option value="events">
-                  <h1>Events</h1>
-                </ion-select-option>
-                <ion-select-option value="other">
-                  <h1>Other</h1>
-                </ion-select-option>
-              </ion-select>
-            </ion-item>
-            
-            <ion-item>
-              <h1>1-902-394-4901</h1>
-            </ion-item>
-          </ion-list>
-      </ion-toolbar>
-  </ion-header>
     <ion-content>
       <ion-row  class="background-tint-primary-lightest">
         <ion-col size="12">

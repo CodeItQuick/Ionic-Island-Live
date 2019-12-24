@@ -21,7 +21,7 @@ export class AboutPage implements OnInit {
       this.router.navigateByUrl(`events`);
     } else if (this.portfolio === 'other') {
     this.router.navigateByUrl(`other`);
-  }
+    }
   }
 
 }
